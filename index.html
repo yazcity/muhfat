@@ -1,105 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Easy Step Progress Bar Demo</title>
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
-    <script src="progress.plugin.js"></script>
-    <style>
-        body { background-color: #ECF0F1; font-family: 'Roboto'; }
-    .wrap {
-        position: relative;
-        margin: 50px 100px;
-    }
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-    .line {
-        width: 500px;
-        height: 5px;
-        background: #DA4453;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
+.bgimg {
+  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
 
-    .step {
-        width: 0px;
-        height: 5px;
-        background: #34BC9D;
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin: 0;
-        padding: 0;
-    }
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
 
-    .flag {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        line-height: 36px;
-        border-radius: 50%;
-        text-align: center;
-        border: 2px solid #DA4453;
-        position: absolute;
-        top: -20px;
-        background: #fafafa;
-        z-index: 10;
-    }
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
 
-    .next,.prev {
-        margin-top: 130px;
-    }
-    h1 { margin-top: 150px; }
-    .btn { margin: 130px 20px; }
-    </style>
-</head>
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-<body><div id="jquery-script-menu">
-<div class="jquery-script-center">
-<ul>
-<li><a href="https://www.jqueryscript.net/other/multi-step-progress-bar.html">Yazcity</a></li>
-<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
-</ul>
-<div class="jquery-script-ads"><script type="text/javascript"><!--
-google_ad_client = "ca-pub-2783044520727903";
-/* jQuery_demo */
-google_ad_slot = "2780937993";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></div>
-<div class="jquery-script-clear"></div>
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Muhfat</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>7 days left</p>
+  </div>
+  <div class="bottomleft">
+    <p>Ahammed Yaseen</p>
+  </div>
 </div>
-</div>
-<h1>Ahammed Yaseen</h1>
-    <script>
 
-    	$.progress({
-
-    		step : 3,
-    		line_w : 250,
-    	});
-    </script>
 </body>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </html>
